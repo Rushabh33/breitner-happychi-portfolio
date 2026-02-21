@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
@@ -162,16 +162,16 @@
           } catch (e) {}
         }
         function p(e, t, n) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-            e.fillText(t, 0, 0);
+          (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0));
           var t = new Uint32Array(
-              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data,
             ),
             r =
               (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
               e.fillText(n, 0, 0),
               new Uint32Array(
-                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data,
               ));
           return t.every(function (e, t) {
             return e === r[t];
@@ -205,7 +205,7 @@
         }
         function t(e) {
           var t = i.createElement("script");
-          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+          ((t.src = e), (t.defer = !0), i.head.appendChild(t));
         }
         "undefined" != typeof Promise &&
           ((o = "wpEmojiSettingsSupports"),
@@ -242,7 +242,7 @@
                       f.toString() +
                       "(" +
                       [JSON.stringify(s), u.toString(), p.toString()].join(
-                        ","
+                        ",",
                       ) +
                       "));",
                     r = new Blob([e], { type: "text/javascript" }),
@@ -250,7 +250,7 @@
                       name: "wpTestEmojiSupports",
                     });
                   return void (a.onmessage = function (e) {
-                    c((n = e.data)), a.terminate(), t(n);
+                    (c((n = e.data)), a.terminate(), t(n));
                   });
                 } catch (e) {}
               c((n = f(s, u, p)));
@@ -259,18 +259,18 @@
           })
             .then(function (e) {
               for (var t in e)
-                (n.supports[t] = e[t]),
+                ((n.supports[t] = e[t]),
                   (n.supports.everything =
                     n.supports.everything && n.supports[t]),
                   "flag" !== t &&
                     (n.supports.everythingExceptFlag =
-                      n.supports.everythingExceptFlag && n.supports[t]);
-              (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]));
+              ((n.supports.everythingExceptFlag =
                 n.supports.everythingExceptFlag && !n.supports.flag),
                 (n.DOMReady = !1),
                 (n.readyCallback = function () {
                   n.DOMReady = !0;
-                });
+                }));
             })
             .then(function () {
               return e;
@@ -711,8 +711,8 @@
         --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
         --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
         --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
-          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--outlined:
+          6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
         --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
       }
       :where(.is-layout-flex) {
@@ -1111,19 +1111,13 @@
               ><img
                 width="476"
                 height="452"
-                src="https://happytaichi01.files.wordpress.com/2021/01/cropped-screen-shot-2021-01-06-at-7.20.50-pm.png"
+                src="../wp-content/uploads/2021/01/happychi-logo.png"
                 class="custom-logo"
-                alt="Welcome"
+                alt=""
                 decoding="async"
                 fetchpriority="high"
-                srcset="
-                  https://happytaichi01.files.wordpress.com/2021/01/cropped-screen-shot-2021-01-06-at-7.20.50-pm.png?w=476&amp;ssl=1            476w,
-                  https://happytaichi01.files.wordpress.com/2021/01/cropped-screen-shot-2021-01-06-at-7.20.50-pm.png?resize=300%2C285&amp;ssl=1 300w
-                "
-                sizes="(max-width: 476px) 100vw, 476px"
             /></a>
           </div>
-          <p class="site-title"><a href="/" rel="home">Welcome</a></p>
         </div>
         <!-- .site-branding -->
 
@@ -1240,30 +1234,29 @@
                     </div>
 
                     <p>
-                      Joseph Breitner started learning LokhupBaFa and Tai Chi
-                      more than 15 years ago, after moving to Canada from
-                      Israel. Since 2014 he has volunteered his time in
-                      different roles and clubs in order to support and spread
-                      the benefits of Tai Chi and other Internal Arts. His
-                      latest role was instructing Tai Chi and 8 Brocades Qigong
-                      at Tai Chi Journey Vaughan club and at Community Centers
-                      in Thornhill. He held additional positions, such as
-                      President of Tai Chi Journey Vaughan and was part of the
-                      leadership team of Tai Chi Journey (a group of clubs in
-                      the GTA area). He also instructed Tai Chi at senior homes
-                      and various events in City of Vaughan. All of the roles
-                      that Joseph Breitner held, were as a volunteer with no
-                      compensation.
+                      Joseph Breitner started learning LokhupBaFa and Tai Chi in
+                      2004. Since 2014 he has volunteered his time in different
+                      roles and clubs in order to support and spread the
+                      benefits of Tai Chi and other Internal Arts. One of the
+                      roles was instructing Tai Chi and 8 Brocades Qigong at Tai
+                      Chi Journey Vaughan club and at Community Centers in
+                      Thornhill. He held additional positions, such as President
+                      of Tai Chi Journey Vaughan and was part of the leadership
+                      team of Tai Chi Journey (a group of clubs in the GTA
+                      area). He also instructed Tai Chi at senior homes and
+                      various events in City of Vaughan. Since moving to Mono he
+                      stared instructing Qigong and Tai Chi at the Town of Mono
+                      Community Center. Many of the roles that Joseph Breitner
+                      held, were as a volunteer with no compensation.
                     </p>
 
                     <p>
-                      Now in 2021, Joseph continues to follow his passion and
-                      dedication to this noble art by starting his own club. His
-                      focus is on the happiness of his students and their
-                      learning of Tai Chi, and he continues to explore new,
-                      creative and&nbsp;simple ways&nbsp;for his students to
-                      learn and absorb the benefits in a relaxing, enjoyable and
-                      fun environment.
+                      Joseph continues to follow his passion and dedication to
+                      this noble art by having his own club. His focus is on the
+                      happiness of his students and their learning of Tai Chi,
+                      and he continues to explore new, creative and&nbsp;simple
+                      ways&nbsp;for his students to learn and absorb the
+                      benefits in a relaxing, enjoyable and fun environment.
                     </p>
 
                     <p>
@@ -1297,8 +1290,7 @@
 
       <footer id="colophon" class="site-footer responsive-max-width">
         <div class="site-info">
-          <a class="site-name" href="/" rel="home">Welcome</a
-          ><span class="comma">,</span>
+          
         </div>
         <!-- .site-info -->
       </footer>
@@ -1370,7 +1362,7 @@
                 (t.tabIndex = -1),
               t.focus());
           },
-          !1
+          !1,
         );
     </script>
   </body>
